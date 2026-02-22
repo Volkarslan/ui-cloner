@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React-Cloner</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">React-Cloner</h1>
+    <span class="version">v0.1.0</span>
+  </header>
+
+  <div class="controls">
+    <button id="btn-scan" class="btn btn-primary">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M1 1h4v4H1V1zm10 0h4v4h-4V1zM1 11h4v4H1v-4zm10 0h4v4h-4v-4zM6 3h4v2H6V3zM3 6h2v4H3V6zm8 0h2v4h-2V6zM6 11h4v2H6v-2z" fill="currentColor"/>
+      </svg>
+      Scan Page
+    </button>
+    <button id="btn-select" class="btn btn-secondary">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M2 2v4H0V0h6v2H2zm12 0h-4V0h6v6h-2V2zM2 14v-4H0v6h6v-2H2zm12 0h-4v2h6v-6h-2v4zM4 4h8v8H4V4z" fill="currentColor"/>
+      </svg>
+      Select Element
+    </button>
+  </div>
+
+  <div class="options">
+    <label class="option-label">
+      <input type="checkbox" id="opt-placeholders"> Use placeholder images
+    </label>
+    <label class="option-label">
+      <input type="checkbox" id="opt-auto-scroll" checked> Auto-scroll page
+    </label>
+  </div>
+
+  <div id="progress-container" class="progress-container hidden">
+    <div class="progress-bar">
+      <div id="progress-fill" class="progress-fill"></div>
+    </div>
+    <span id="progress-text" class="progress-text">Starting...</span>
+  </div>
+
+  <div id="status-message" class="status-message hidden"></div>
+
+  <div class="output-container">
+    <div class="output-header">
+      <span class="output-label">Output</span>
+      <div class="output-actions">
+        <button id="btn-copy" class="btn btn-sm" disabled>Copy</button>
+        <button id="btn-download" class="btn btn-sm" disabled>Download</button>
+      </div>
+    </div>
+    <pre id="output" class="output"><code id="output-code">Click "Scan Page" to extract the DOM structure.</code></pre>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
