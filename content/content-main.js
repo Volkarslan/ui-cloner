@@ -1,4 +1,4 @@
-// React-Cloner Content Script
+// UICloner Content Script
 // Entry point injected into web pages
 // Orchestrates all extraction modules
 

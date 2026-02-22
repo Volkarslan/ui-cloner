@@ -1,4 +1,4 @@
-// React-Cloner Side Panel
+// UICloner Side Panel
 // UI controls, JSON display, copy/download
 
 const MSG = {
@@ -268,7 +268,7 @@ function downloadJSON() {
 
   const a = document.createElement('a');
   a.href = url;
-  a.download = `react-cloner-${timestamp}.json`;
+  a.download = `uicloner-${timestamp}.json`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);

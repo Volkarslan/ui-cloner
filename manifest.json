@@ -1,15 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "React-Cloner",
+  "name": "UICloner",
   "version": "0.1.0",
-  "description": "Extract DOM structure, CSS, and React component names as AI-friendly JSON",
+  "description": "Extract any webpage's DOM structure, CSS, and Tailwind suggestions as AI-friendly JSON",
   "permissions": [
     "activeTab",
     "sidePanel",
     "scripting"
   ],
   "action": {
-    "default_title": "React-Cloner",
+    "default_title": "UICloner",
     "default_icon": {
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",

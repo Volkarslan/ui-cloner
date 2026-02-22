@@ -34,7 +34,7 @@ export function deactivate() {
 
 function createOverlay() {
   overlay = document.createElement('div');
-  overlay.id = 'react-cloner-overlay';
+  overlay.id = 'uicloner-overlay';
   overlay.style.cssText = `
     position: fixed;
     pointer-events: none;
@@ -47,7 +47,7 @@ function createOverlay() {
 
   // Label for showing tag name
   const label = document.createElement('div');
-  label.id = 'react-cloner-label';
+  label.id = 'uicloner-label';
   label.style.cssText = `
     position: absolute;
     top: -22px;
@@ -91,7 +91,7 @@ function handleMouseMove(e) {
   overlay.style.height = rect.height + 'px';
 
   // Update label
-  const label = overlay.querySelector('#react-cloner-label');
+  const label = overlay.querySelector('#uicloner-label');
   if (label) {
     const tagName = element.tagName.toLowerCase();
     const id = element.id ? `#${element.id}` : '';

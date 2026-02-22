@@ -1,4 +1,4 @@
-// React-Cloner Background Service Worker
+// UICloner Background Service Worker
 // Handles message routing between side panel and content script
 
 const MSG = {
